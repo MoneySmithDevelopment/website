@@ -15,7 +15,7 @@ const Navbar = () => {
           <li>Customer Mobile</li>
           <li>Vendor Mobile</li>
           <li>Blog</li>
-          <li>Support</li>
+          <li>About Us</li>
         </ul>
       </div>
 
