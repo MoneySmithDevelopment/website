@@ -5,6 +5,7 @@ import hero_illustration from "../assets/hero_illustration.png";
 import Customer_app from "../components/landingPage/Customer_app";
 import nfc_logo from "../logos/nfc_logo.png";
 import Vendor_app from "../components/landingPage/Vendor_app";
+import Blog from "../components/landingPage/Blog";
 
 const Home = () => {
   return (
@@ -99,6 +100,11 @@ const Home = () => {
       {/*Vendor App section*/}
       <div id="vendor_app">
         <Vendor_app />
+      </div>
+
+      {/**Blog section */}
+      <div>
+        <Blog />
       </div>
     </Navbar_Footer>
   );
