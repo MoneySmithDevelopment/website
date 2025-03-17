@@ -1,13 +1,12 @@
 import { Button, Chip, Typography } from "@mui/material";
 import React from "react";
-import vendor_app from "../../assets/phone.png";
-import lightning from "../../assets/lightning.png";
-import security from "../../assets/security.png";
-import accessible from "../../assets/accessible.png";
-import cards from "../../assets/cards.png";
-import scan_to_pay from "../../assets/scan_to_pay.png";
-import tap_to_pay from "../../assets/tap_to_pay.png";
-//import lightning from "../../icons/lightening.png";
+import customer_app from "../../assets/customer_app/phone.png";
+import lightning from "../../assets/customer_app/lightning.png";
+import security from "../../assets/customer_app/security.png";
+import accessible from "../../assets/customer_app/accessible.png";
+import cards from "../../assets/customer_app/cards.png";
+import scan_to_pay from "../../assets/customer_app/scan_to_pay.png";
+import tap_to_pay from "../../assets/customer_app/tap_to_pay.png";
 
 const Customer_app = () => {
   return (
@@ -47,7 +46,7 @@ const Customer_app = () => {
       <div className="flex gap-[40px] justify-center pb-[40px]">
         <div className="bg-[#162748] relative flex justify-center rounded-[40px] w-[648px] h-[566px] ">
           <div className="pt-[73px]">
-            <img src={vendor_app} alt="Vendor app illustration" />
+            <img src={customer_app} alt="Vendor app illustration" />
           </div>
 
           <img

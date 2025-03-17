@@ -3,6 +3,8 @@ import React from "react";
 import Navbar_Footer from "../container/Navbar_Footer";
 import hero_illustration from "../assets/hero_illustration.png";
 import Customer_app from "../components/landingPage/Customer_app";
+import nfc_logo from "../logos/nfc_logo.png";
+import Vendor_app from "../components/landingPage/Vendor_app";
 
 const Home = () => {
   return (
@@ -75,6 +77,28 @@ const Home = () => {
       {/*Customer App seciton*/}
       <div id="customer_app">
         <Customer_app />
+      </div>
+
+      {/*banner section*/}
+      <div className="bg-[#5D7DBC] py-[75px] pl-[60px] pr-[80px] flex justify-center text-center font-lato">
+        <div className="relative">
+          <Typography sx={{ color: "#D0D5DD", fontSize: "64px" }}>
+            Buying or Selling? MoneySmith <br /> makes it simple.
+          </Typography>
+
+          <div className="mt-24">
+            <img
+              src={nfc_logo}
+              alt="NFC logo"
+              className="absolute -bottom-[4.7rem] -right-[21.75rem]"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/*Vendor App section*/}
+      <div id="vendor_app">
+        <Vendor_app />
       </div>
     </Navbar_Footer>
   );
