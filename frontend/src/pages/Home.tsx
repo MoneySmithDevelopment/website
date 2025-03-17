@@ -2,10 +2,12 @@ import { Button, Typography } from "@mui/material";
 import React from "react";
 import Navbar_Footer from "../container/Navbar_Footer";
 import hero_illustration from "../assets/hero_illustration.png";
+import Customer_app from "../components/landingPage/Customer_app";
 
 const Home = () => {
   return (
     <Navbar_Footer>
+      {/*Hero seciton*/}
       <div className="text-white flex flex-col pt-[100px]">
         <div className="flex flex-col gap-[8px]">
           <div className="flex justify-center font-lato">
@@ -68,6 +70,11 @@ const Home = () => {
             //className="h-[1280px] w-[585px]"
           />
         </div>
+      </div>
+
+      {/*Customer App seciton*/}
+      <div id="customer_app">
+        <Customer_app />
       </div>
     </Navbar_Footer>
   );
