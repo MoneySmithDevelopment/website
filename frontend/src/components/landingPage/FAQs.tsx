@@ -26,13 +26,23 @@ const FAQs = () => {
         </div>
 
         <div className="font-lato flex justify-center text-center text-[#FAFAFA]">
-          <Typography variant="h1" sx={{ fontSize: "40px" }}>
+          <Typography
+            variant="h1"
+            sx={{
+              fontSize: "40px",
+              fontFamily: "'Lato', sans-serif",
+              fontWeight: 700,
+            }}
+          >
             Do you have questions?
           </Typography>
         </div>
 
         <div className="font-nunito flex justify-center text-center text-[#D0D5DD]">
-          <Typography sx={{ fontSize: "18px" }} variant="body2">
+          <Typography
+            sx={{ fontSize: "18px", fontFamily: "'Nunito Sans', sans-serif" }}
+            variant="body2"
+          >
             Here are frequently asked questions people ask about our app
           </Typography>
         </div>

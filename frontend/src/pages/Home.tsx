@@ -15,19 +15,26 @@ const Home = () => {
       <div className="text-white flex flex-col pt-[100px]">
         <div className="flex flex-col gap-[8px]">
           <div className="flex justify-center font-lato">
-            <Typography variant="h4" sx={{ fontSize: "28px" }}>
+            <Typography
+              variant="h4"
+              sx={{ fontSize: "28px", fontFamily: "'Lato', sans-serif" }}
+            >
               MONEYSMITH
             </Typography>
           </div>
 
           <div className="flex justify-center font-lato">
-            <Typography sx={{ fontSize: "64px" }}>
+            <Typography
+              sx={{ fontSize: "64px", fontFamily: "'Lato', sans-serif" }}
+            >
               Fast. Stress-Free. <span className="text-orange-600">Secure</span>
             </Typography>
           </div>
 
           <div className="flex justify-center text-center font-nunito">
-            <Typography sx={{ fontSize: "18px" }}>
+            <Typography
+              sx={{ fontSize: "18px", fontFamily: "'Nunito Sans', sans-serif" }}
+            >
               Say goodbye to complaints and cash hassles—say hello to
               contactless <br /> payments. MoneySmith turns your what-ifs into
               reality!
@@ -45,7 +52,13 @@ const Home = () => {
                 width: "180px",
               }}
             >
-              <Typography sx={{ color: "#FFFFFF", fontSize: "16px" }}>
+              <Typography
+                sx={{
+                  color: "#FFFFFF",
+                  fontSize: "16px",
+                  fontFamily: "'Nunito Sans', sans-serif",
+                }}
+              >
                 Get the App
               </Typography>
             </Button>
@@ -60,7 +73,13 @@ const Home = () => {
                 width: "180px",
               }}
             >
-              <Typography sx={{ color: "#FFFFFF", fontSize: "16px" }}>
+              <Typography
+                sx={{
+                  color: "#FFFFFF",
+                  fontSize: "16px",
+                  fontFamily: "'Nunito Sans', sans-serif",
+                }}
+              >
                 View Demo
               </Typography>
             </Button>
@@ -83,8 +102,14 @@ const Home = () => {
 
       {/*banner section*/}
       <div className="bg-[#5D7DBC] py-[75px] pl-[60px] pr-[80px] flex justify-center text-center font-lato">
-        <div className="relative">
-          <Typography sx={{ color: "#D0D5DD", fontSize: "64px" }}>
+        <div className="relative items-center">
+          <Typography
+            sx={{
+              color: "#D0D5DD",
+              fontSize: "64px",
+              fontFamily: "'Lato', sans-serif",
+            }}
+          >
             Buying or Selling? MoneySmith <br /> makes it simple.
           </Typography>
 

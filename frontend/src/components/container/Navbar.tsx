@@ -9,17 +9,37 @@ const Navbar = () => {
   return (
     <div className="px-[80px] flex justify-between text-[#EBEFF7] bg-[#121B2B] font-nunito">
       <div className="flex py-[24px]" onClick={() => navigate("/")}>
-        <img alt="MoneySmith logo" src={logo} className="w-[152px] h-[24px]" />
+        <img
+          alt="MoneySmith logo"
+          src={logo}
+          className="w-[152px] h-[24px] cursor-pointer"
+        />
       </div>
 
       <div className="py-[24px]">
-        <ul className="flex gap-[40px] text-[18px]">
-          <li onClick={() => navigate("/home#customer_app")}>
+        <ul
+          className="flex gap-[40px] text-[18px]"
+          style={{ fontFamily: '"Nunito sans", "Roboto", "Arial", sans-serif' }}
+        >
+          <li
+            onClick={() => navigate("/#customer_app")}
+            className="cursor-pointer"
+          >
             Customer Mobile
           </li>
-          <li onClick={() => navigate("/home#vendor_app")}>Vendor Mobile</li>
+          <li
+            onClick={() => navigate("/#vendor_app")}
+            className="cursor-pointer font-nunito"
+          >
+            Vendor Mobile
+          </li>
           {/* <li onClick={() => navigate("/blog")}>Blog</li> */}
-          <li onClick={() => navigate("/about")}>About Us</li>
+          <li
+            onClick={() => navigate("/about")}
+            className="cursor-pointer font-nunito"
+          >
+            About Us
+          </li>
         </ul>
       </div>
 
@@ -34,7 +54,13 @@ const Navbar = () => {
             textTransform: "capitalize",
           }}
         >
-          <Typography sx={{ color: "#FFFFFF", fontSize: "16px" }}>
+          <Typography
+            sx={{
+              color: "#FFFFFF",
+              fontSize: "16px",
+              fontFamily: "'Nunito Sans', sans-serif",
+            }}
+          >
             Contact Us
           </Typography>
         </Button>

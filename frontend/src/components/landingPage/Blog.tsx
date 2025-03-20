@@ -10,7 +10,13 @@ const Blog = () => {
 
         <div className="flex justify-between pt-[40px]">
           <div className="bg-[#345DAB33] text-center rounded-[8px] py-[8px] px-[16px]">
-            <Typography sx={{ color: "#345DAB", fontSize: "20px" }}>
+            <Typography
+              sx={{
+                color: "#345DAB",
+                fontSize: "20px",
+                fontFamily: "'Nunito Sans', sans-serif",
+              }}
+            >
               General
             </Typography>
           </div>
@@ -24,7 +30,12 @@ const Blog = () => {
 
         <div>
           <Typography
-            sx={{ color: "white", fontSize: "36px", lineHeight: "100%" }}
+            sx={{
+              color: "white",
+              fontSize: "36px",
+              lineHeight: "100%",
+              fontFamily: "'Lato', sans-serif",
+            }}
           >
             From Piggy Banks to Phone Taps: How <br /> MoneySmith Is Changing
             the Payment <br /> Game
@@ -32,7 +43,13 @@ const Blog = () => {
         </div>
 
         <div>
-          <Typography sx={{ fontSize: "16px", color: "#D0D5DD" }}>
+          <Typography
+            sx={{
+              fontSize: "16px",
+              color: "#D0D5DD",
+              fontFamily: "'Nunito Sans', sans-serif",
+            }}
+          >
             If someone had told your grandfather he’d one day pay for things
             from the <br /> comfort of his home, he would’ve laughed it off.
           </Typography>
@@ -44,7 +61,13 @@ const Blog = () => {
 
         <div className="flex justify-between pt-[40px]">
           <div className="bg-[#345DAB33] text-center rounded-[8px] py-[8px] px-[16px]">
-            <Typography sx={{ color: "#345DAB", fontSize: "20px" }}>
+            <Typography
+              sx={{
+                color: "#345DAB",
+                fontSize: "20px",
+                fontFamily: "'Nunito Sans', sans-serif",
+              }}
+            >
               General
             </Typography>
           </div>
@@ -58,7 +81,12 @@ const Blog = () => {
 
         <div>
           <Typography
-            sx={{ color: "white", fontSize: "36px", lineHeight: "100%" }}
+            sx={{
+              color: "white",
+              fontSize: "36px",
+              lineHeight: "100%",
+              fontFamily: "'Lato', sans-serif",
+            }}
           >
             From Piggy Banks to Phone Taps: How <br /> MoneySmith Is Changing
             the Payment <br /> Game
@@ -66,7 +94,13 @@ const Blog = () => {
         </div>
 
         <div>
-          <Typography sx={{ fontSize: "16px", color: "#D0D5DD" }}>
+          <Typography
+            sx={{
+              fontSize: "16px",
+              color: "#D0D5DD",
+              fontFamily: "'Nunito Sans', sans-serif",
+            }}
+          >
             If someone had told your grandfather he’d one day pay for things
             from the <br /> comfort of his home, he would’ve laughed it off.
           </Typography>

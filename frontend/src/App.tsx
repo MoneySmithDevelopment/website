@@ -9,7 +9,7 @@ const BlogPage = React.lazy(() => import("./pages/Blog"));
 function App() {
   return (
     <Routes>
-      <Route path="/home" Component={HomePage} />
+      <Route path="/" Component={HomePage} />
       <Route path="/about" Component={AboutPage} />
       <Route path="/blog" Component={BlogPage} />
     </Routes>

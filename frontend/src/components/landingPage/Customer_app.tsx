@@ -31,13 +31,23 @@ const Customer_app = () => {
         </div>
 
         <div className="font-lato flex justify-center text-center text-[#FAFAFA]">
-          <Typography variant="h1" sx={{ fontSize: "40px" }}>
+          <Typography
+            variant="h1"
+            sx={{
+              fontSize: "40px",
+              fontFamily: "'Lato', sans-serif",
+              fontWeight: 700,
+            }}
+          >
             Take full control of <br /> your payments
           </Typography>
         </div>
 
         <div className="font-nunito flex justify-center text-center text-[#D0D5DD]">
-          <Typography sx={{ fontSize: "18px" }} variant="body2">
+          <Typography
+            sx={{ fontSize: "18px", fontFamily: "'Nunito Sans', sans-serif" }}
+            variant="body2"
+          >
             Join thousands enjoying stress-free transactions with Moneysmith
           </Typography>
         </div>

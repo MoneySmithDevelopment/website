@@ -17,7 +17,13 @@ const Footer = () => {
           className="w-[227px] h-[40px]"
         />
 
-        <Typography sx={{ fontSize: "18px", color: "#98A2B3" }}>
+        <Typography
+          sx={{
+            fontSize: "18px",
+            color: "#98A2B3",
+            fontFamily: "'Nunito Sans', sans-serif",
+          }}
+        >
           A budget isn’t a punishment, it’s a game plan. Use <br /> MoneySmith’s
           budgeting tools to set spending limits and get <br /> alerts before
           you go overboard.
@@ -29,9 +35,11 @@ const Footer = () => {
       </div>
 
       <div className="pt-[3%] flex flex-col gap-[24px] font-nunito">
-        <Typography>Company</Typography>
+        <Typography sx={{ fontFamily: "'Nunito Sans', sans-serif" }}>
+          Company
+        </Typography>
 
-        <ul className="text-[#D0D3D9] flex flex-col gap-[12px]">
+        <ul className="text-[#D0D3D9] flex flex-col font-nunito gap-[12px]">
           <li>About</li>
           <li>Support</li>
           <li>FAQs</li>
@@ -41,9 +49,11 @@ const Footer = () => {
       </div>
 
       <div className="pt-[3%] flex flex-col gap-[24px] font-nunito">
-        <Typography>Legal</Typography>
+        <Typography sx={{ fontFamily: "'Nunito Sans', sans-serif" }}>
+          Legal
+        </Typography>
 
-        <ul className="text-[#D0D3D9] flex flex-col gap-[12px]">
+        <ul className="text-[#D0D3D9] flex flex-col gap-[12px] font-nunito">
           <li>Partner with us</li>
           <li>Privacy Policy</li>
           <li>T&Cs</li>
@@ -51,7 +61,9 @@ const Footer = () => {
       </div>
 
       <div className="pt-[3%] flex flex-col gap-[40px] font-nunito">
-        <Typography>Connect with us</Typography>
+        <Typography sx={{ fontFamily: "'Nunito Sans', sans-serif" }}>
+          Connect with us
+        </Typography>
 
         <div className="flex gap-[10px]">
           <div className="bg-[#FFFFFF0D] rounded-full p-[10px]">
