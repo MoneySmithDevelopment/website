@@ -9,7 +9,7 @@ import app_store from "../../assets/appstore.png";
 
 const Footer = () => {
   return (
-    <div className="bg-[#121B2B] text-white flex justify-between px-[80px] py-[40px]">
+    <div className="bg-[#121B2B] text-white flex flex-col md:flex-row justify-between px-[30px] md:px-[80px] py-[20px] md:py-[40px]">
       <div className="flex flex-col gap-[40px] font-nunito">
         <img
           src={moneysmith_logo}
@@ -17,24 +17,40 @@ const Footer = () => {
           className="w-[227px] h-[40px]"
         />
 
-        <Typography
-          sx={{
-            fontSize: "18px",
-            color: "#98A2B3",
-            fontFamily: "'Nunito Sans', sans-serif",
-          }}
-        >
-          A budget isn’t a punishment, it’s a game plan. Use <br /> MoneySmith’s
-          budgeting tools to set spending limits and get <br /> alerts before
-          you go overboard.
-        </Typography>
+        <div className=" md:hidden">
+          <Typography
+            sx={{
+              fontSize: "18px",
+              color: "#98A2B3",
+              fontFamily: "'Nunito Sans', sans-serif",
+            }}
+          >
+            A budget isn’t a punishment, it’s a game plan. Use MoneySmith’s
+            budgeting tools to set spending limits and get alerts before you go
+            overboard.
+          </Typography>
+        </div>
+
+        <div className="hidden md:block">
+          <Typography
+            sx={{
+              fontSize: "18px",
+              color: "#98A2B3",
+              fontFamily: "'Nunito Sans', sans-serif",
+            }}
+          >
+            A budget isn’t a punishment, it’s a game plan. Use <br />{" "}
+            MoneySmith’s budgeting tools to set spending limits and get <br />{" "}
+            alerts before you go overboard.
+          </Typography>
+        </div>
 
         <Typography sx={{ fontSize: "17px", color: "#D0D3D9" }}>
           2025 © All rights reserved, Moneysmith
         </Typography>
       </div>
 
-      <div className="pt-[3%] flex flex-col gap-[24px] font-nunito">
+      <div className="md:pt-[3%] pt-[10%] flex flex-col gap-[24px] font-nunito">
         <Typography sx={{ fontFamily: "'Nunito Sans', sans-serif" }}>
           Company
         </Typography>
@@ -48,7 +64,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="pt-[3%] flex flex-col gap-[24px] font-nunito">
+      <div className="pt-[3%] pt-[10%] flex flex-col gap-[24px] font-nunito">
         <Typography sx={{ fontFamily: "'Nunito Sans', sans-serif" }}>
           Legal
         </Typography>
@@ -60,7 +76,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="pt-[3%] flex flex-col gap-[40px] font-nunito">
+      <div className="pt-[3%] pt-[10%] flex flex-col  md:gap-[40px] gap-[20px] font-nunito">
         <Typography sx={{ fontFamily: "'Nunito Sans', sans-serif" }}>
           Connect with us
         </Typography>
@@ -84,10 +100,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex gap-[12px]">
-          <img src={google_play} alt="Google play" />
+        <div className="flex flex-col md:flex-row gap-[12px]">
+          <img src={google_play} alt="Google play" className="w-[10rem]" />
 
-          <img src={app_store} alt="Apple store" />
+          <img src={app_store} alt="Apple store" className="w-[10rem]" />
         </div>
       </div>
     </div>
