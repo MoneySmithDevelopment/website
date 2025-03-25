@@ -48,8 +48,8 @@ const Home = () => {
               }}
             >
               Say goodbye to complaints and cash hassles—say hello to
-              contactless <br /> payments. MoneySmith turns your what-ifs into
-              reality!
+              contactless <br className="hidden md:block" /> payments.
+              MoneySmith turns your what-ifs into reality!
             </Typography>
           </div>
 
@@ -136,7 +136,8 @@ const Home = () => {
                 fontFamily: "'Lato', sans-serif",
               }}
             >
-              Buying or Selling? MoneySmith <br /> makes it simple.
+              Buying or Selling? MoneySmith <br className="hidden md:block" />{" "}
+              makes it simple.
             </Typography>
           </div>
 

@@ -8,7 +8,7 @@ const About = () => {
     <Navbar_Footer>
       {/**About MoneySmith */}
       <div className="flex flex-col gap-[30px] justify-center  ">
-        <div className="py-[40px] px-[80px]">
+        <div className="py-[40px] md:px-[80px] px-[20px]">
           <div className="font-lato">
             <Typography
               variant="h6"
@@ -22,9 +22,9 @@ const About = () => {
             </Typography>
           </div>
 
-          <div className="flex justify-between ">
+          <div className="flex flex-col justify-between ">
             <div>
-              <div className="font-lato my-[10px]">
+              <div className="font-lato my-[10px] mb-[30px]">
                 <Typography
                   variant="h3"
                   sx={{
@@ -37,7 +37,7 @@ const About = () => {
                 </Typography>
               </div>
 
-              <div className="flex flex-col gap-[10px] font-nunito">
+              <div className="flex flex-col md:gap-[10px] gap-[30px] font-nunito">
                 <Typography
                   sx={{
                     fontSize: "18px",
@@ -46,7 +46,8 @@ const About = () => {
                   }}
                 >
                   MoneySmith is your all-in-one financial companion, built to{" "}
-                  <br /> make managing money effortless and secure.
+                  <br className="hidden md:block" /> make managing money
+                  effortless and secure.
                 </Typography>
 
                 <Typography
@@ -54,17 +55,19 @@ const About = () => {
                     fontSize: "18px",
                     color: "#D0D5DD",
                     fontFamily: "'Nunito Sans', sans-serif",
+                    paddingBottom: "20px",
                   }}
                 >
                   Whether you're using it for personal expenses or business{" "}
-                  <br />
-                  payments, MoneySmith helps you stay on top of your <br />{" "}
-                  finances in just a few taps.
+                  <br className="hidden md:block" />
+                  payments, MoneySmith helps you stay on top of your{" "}
+                  <br className="hidden md:block" /> finances in just a few
+                  taps.
                 </Typography>
               </div>
             </div>
 
-            <div className="flex flex-col gap-[10px] w-[556px]">
+            <div className="flex flex-col md:gap-[10px] gap-[30px] md:w-[556px]">
               <Typography
                 sx={{
                   fontSize: "18px",
@@ -72,9 +75,11 @@ const About = () => {
                   fontFamily: "'Nunito Sans', sans-serif",
                 }}
               >
-                With features like biometric authentication and seamless <br />{" "}
-                card aggregation, your transactions are quick and safe. <br />{" "}
-                Plus, with real-time tracking and instant updates, you'll <br />{" "}
+                With features like biometric authentication and seamless{" "}
+                <br className="hidden md:block" /> card aggregation, your
+                transactions are quick and safe.{" "}
+                <br className="hidden md:block" /> Plus, with real-time tracking
+                and instant updates, you'll <br className="hidden md:block" />{" "}
                 always know where your money's going.
               </Typography>
               <Typography
@@ -84,8 +89,9 @@ const About = () => {
                   fontFamily: "'Nunito Sans', sans-serif",
                 }}
               >
-                Say goodbye to confusion and hello to smart, secure <br />{" "}
-                financial control with MoneySmith.
+                Say goodbye to confusion and hello to smart, secure{" "}
+                <br className="hidden md:block" /> financial control with
+                MoneySmith.
               </Typography>
             </div>
           </div>
@@ -94,14 +100,17 @@ const About = () => {
         {/**Banner section */}
 
         <div className="bg-[#1627481A]  ">
-          <div className="flex flex-col my-[75px] mx-[80px] text-center gap-[10px] text-[#D0D5DD]">
+          <div className="flex flex-col md:py-[40px] py-[25px] md:mx-[80px] mx-[20px] text-center gap-[10px] text-[#D0D5DD]">
             <div className="flex justify-center">
               <Typography
-                fontSize="64px"
                 fontWeight={600}
-                sx={{ fontFamily: "'Lato', sans-serif" }}
+                sx={{
+                  fontFamily: "'Lato', sans-serif",
+                  fontSize: { xs: "40px", md: "64px" },
+                }}
               >
-                Say bye to payment <br /> stress, enjoy effortless <br />{" "}
+                Say bye to payment <br className="hidden md:block" /> stress,
+                enjoy effortless <br className="hidden md:block" />{" "}
                 transactions!
               </Typography>
             </div>
@@ -154,19 +163,19 @@ const About = () => {
 
         {/**Contact section */}
         <div
-          className="flex justify-between py-[40px] px-[80px]  "
+          className="flex md:flex-row flex-col justify-between md:py-[40px] py-[25px] md:px-[80px] px-[20px] "
           id="contact_us"
         >
-          <div className="flex flex-col gap-[10px]">
+          <div className="flex flex-col md:gap-[10px] gap-[20px]">
             <Typography
-              variant="h3"
               sx={{
                 fontSize: "32px",
                 color: "#FFFFFF",
                 fontFamily: "'Lato', sans-serif",
               }}
             >
-              Got a quick question or <br /> need assistance?
+              Got a quick question or <br className="hidden md:block" /> need
+              assistance?
             </Typography>
 
             <Typography
@@ -177,14 +186,17 @@ const About = () => {
                 fontWeight: 400,
               }}
             >
-              Whether you’re unsure about something or just <br /> need a fast
-              response, we’ve got you covered! <br /> If you’re a business owner
-              looking for support, <br /> our team is always here to assist.
-              Just reach out and <br /> we’ll be right back at you!
+              Whether you’re unsure about something or just{" "}
+              <br className="hidden md:block" /> need a fast response, we’ve got
+              you covered! <br className="hidden md:block" /> If you’re a
+              business owner looking for support,{" "}
+              <br className="hidden md:block" /> our team is always here to
+              assist. Just reach out and <br className="hidden md:block" />{" "}
+              we’ll be right back at you!
             </Typography>
           </div>
 
-          <div>
+          <div className="md:mt-[0rem] mt-[2rem]">
             <img src={contact} alt="Contact info" />
           </div>
         </div>

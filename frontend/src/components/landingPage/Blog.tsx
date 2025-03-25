@@ -41,8 +41,9 @@ const Blog = () => {
               fontFamily: "'Lato', sans-serif",
             }}
           >
-            From Piggy Banks to Phone Taps: How <br /> MoneySmith Is Changing
-            the Payment <br /> Game
+            From Piggy Banks to Phone Taps: How{" "}
+            <br className="hidden md:block" /> MoneySmith Is Changing the
+            Payment <br className="hidden md:block" /> Game
           </Typography>
         </div>
 
@@ -55,7 +56,8 @@ const Blog = () => {
             }}
           >
             If someone had told your grandfather he’d one day pay for things
-            from the <br /> comfort of his home, he would’ve laughed it off.
+            from the <br className="hidden md:block" /> comfort of his home, he
+            would’ve laughed it off.
           </Typography>
         </div>
       </div>
@@ -96,8 +98,9 @@ const Blog = () => {
               fontFamily: "'Lato', sans-serif",
             }}
           >
-            From Piggy Banks to Phone Taps: How <br /> MoneySmith Is Changing
-            the Payment <br /> Game
+            From Piggy Banks to Phone Taps: How{" "}
+            <br className="hidden md:block" /> MoneySmith Is Changing the
+            Payment <br className="hidden md:block" /> Game
           </Typography>
         </div>
 
@@ -110,7 +113,8 @@ const Blog = () => {
             }}
           >
             If someone had told your grandfather he’d one day pay for things
-            from the <br /> comfort of his home, he would’ve laughed it off.
+            from the <br className="hidden md:block" /> comfort of his home, he
+            would’ve laughed it off.
           </Typography>
         </div>
       </div>
