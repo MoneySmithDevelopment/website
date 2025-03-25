@@ -64,7 +64,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="pt-[3%] pt-[10%] flex flex-col gap-[24px] font-nunito">
+      <div className="md:pt-[3%] pt-[10%] flex flex-col gap-[24px] font-nunito">
         <Typography sx={{ fontFamily: "'Nunito Sans', sans-serif" }}>
           Legal
         </Typography>
@@ -76,7 +76,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="pt-[3%] pt-[10%] flex flex-col  md:gap-[40px] gap-[20px] font-nunito">
+      <div className="md:pt-[3%] pt-[10%] flex flex-col  md:gap-[40px] gap-[20px] font-nunito">
         <Typography sx={{ fontFamily: "'Nunito Sans', sans-serif" }}>
           Connect with us
         </Typography>

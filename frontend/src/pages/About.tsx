@@ -10,7 +10,7 @@ const About = () => {
       {/**About MoneySmith */}
       <div className="flex flex-col gap-[30px] justify-center  ">
         <div className="py-[40px] md:px-[80px] px-[20px]">
-          <div className="font-lato">
+          <div className="font-lato md:pl-[8rem]">
             <Typography
               variant="h6"
               sx={{
@@ -23,7 +23,7 @@ const About = () => {
             </Typography>
           </div>
 
-          <div className="flex flex-col justify-between ">
+          <div className="flex flex-col md:flex-row justify-evenly ">
             <div>
               <div className="font-lato my-[10px] mb-[30px]">
                 <Typography
@@ -38,7 +38,7 @@ const About = () => {
                 </Typography>
               </div>
 
-              <div className="flex flex-col md:gap-[10px] gap-[30px] font-nunito">
+              <div className="flex flex-col  md:gap-[10px] gap-[30px] font-nunito">
                 <Typography
                   sx={{
                     fontSize: "18px",
@@ -184,7 +184,7 @@ const About = () => {
 
         {/**Contact section */}
         <motion.div
-          className="flex md:flex-row flex-col justify-between md:py-[40px] py-[25px] md:px-[80px] px-[20px]"
+          className="flex md:flex-row flex-col justify-evenly md:py-[40px] py-[25px] md:px-[80px] px-[20px]"
           id="contact_us"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
