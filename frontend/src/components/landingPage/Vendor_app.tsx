@@ -16,7 +16,7 @@ const Vendor_app = () => {
             label="Vendor App"
             variant="filled"
             sx={{
-              fontSize: "24PX",
+              fontSize: { xs: "18px", md: "24px" },
               color: "#F56630",
               borderColor: "#F566301A",
               backgroundColor: "#F566301A",
@@ -33,7 +33,7 @@ const Vendor_app = () => {
           <Typography
             variant="h1"
             sx={{
-              fontSize: "40px",
+              fontSize: { xs: "32px", md: "40px" },
               fontFamily: "'Lato', sans-serif",
               fontWeight: 700,
             }}
@@ -42,9 +42,12 @@ const Vendor_app = () => {
           </Typography>
         </div>
 
-        <div className="font-nunito flex justify-center text-center text-[#D0D5DD]">
+        <div className="font-nunito flex justify-center text-center text-[#D0D5DD] mx-[.5rem] ">
           <Typography
-            sx={{ fontSize: "18px", fontFamily: "'Nunito Sans', sans-serif" }}
+            sx={{
+              fontSize: { xs: "16px", md: "18px" },
+              fontFamily: "'Nunito Sans', sans-serif",
+            }}
             variant="body2"
           >
             We make payments seamless so you can focus on what matters.
@@ -52,15 +55,15 @@ const Vendor_app = () => {
         </div>
       </div>
 
-      <div className="flex gap-[40px] justify-center pb-[40px]">
-        <div className="bg-[#0E192F] py-[60px] px-[40px] rounded-[40px] w-[592px] h-[498px] mt-[2rem]">
+      <div className="flex flex-col md:flex-row gap-[40px] justify-center pb-[40px]">
+        <div className="bg-[#0E192F] mx-[.5rem] md:py-[60px] py-[30px] px-[40px] rounded-[40px] md:w-[592px] md:h-[498px] w-[358px] mt-[2rem]">
           <div className="flex flex-col gap-[8px]">
             <img src={speed} alt="Speed" />
             <img src={simple} alt="Simple" />
             <img src={scalable} alt="Scalable" />
           </div>
 
-          <div className="flex  gap-[24px] mt-[40px]">
+          <div className="flex gap-[12px]  md:gap-[24px] md:mt-[40px] mt-[20px]">
             <Button
               className="bg-gradient-to-r from-[#345DAB] to-[#212FAB]"
               sx={{
@@ -94,21 +97,21 @@ const Vendor_app = () => {
           </div>
         </div>
 
-        <div className="bg-[#162748] relative flex justify-center rounded-[40px] w-[648px] h-[566px] ">
-          <div className="pt-[70px]">
+        <div className="bg-[#162748] mx-[.5rem] relative flex justify-center rounded-[40px] md:w-[648px] w-[358px] md:h-[566px] h-[312px] ">
+          <div className="md:pt-[70.3px] pt-[33px] md:w-[438px] md:h-[493px] w-[241px] h-[272px]">
             <img src={vendor_app} alt="Vendor app illustration" />
           </div>
 
           <img
             src={refer_friend}
             alt="Cards"
-            className="absolute bottom-[7.5rem] left-1/2 transform -translate-x-1/2"
+            className="absolute md:bottom-[7.5rem] bottom-[4rem] left-1/2 transform -translate-x-1/2 md:h-[194px] h-[110px]"
           />
 
           <img
             src={hallway}
             alt="Cards"
-            className="absolute -bottom-[.5rem] left-1/2 transform -translate-x-1/2"
+            className="absolute md:-bottom-[.5rem] -bottom-[.1rem] left-1/2 transform -translate-x-1/2 md:h-[90px] h-[58px] w-[230px] md:w-[425px]"
           />
         </div>
       </div>

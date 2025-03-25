@@ -12,28 +12,40 @@ const Home = () => {
   return (
     <Navbar_Footer>
       {/*Hero seciton*/}
-      <div className="text-white flex flex-col pt-[100px]">
-        <div className="flex flex-col gap-[8px]">
-          <div className="flex justify-center font-lato">
+      <div className="text-white flex flex-col md:pt-[100px] pt-[50px]">
+        <div className="flex flex-col md:gap-[8px]">
+          <div className="flex text-center justify-center font-lato">
             <Typography
               variant="h4"
-              sx={{ fontSize: "28px", fontFamily: "'Lato', sans-serif" }}
+              sx={{
+                fontSize: { xs: "20px", md: "28px" },
+                fontFamily: "'Lato', sans-serif",
+              }}
             >
               MONEYSMITH
             </Typography>
           </div>
 
-          <div className="flex justify-center font-lato">
+          <div className="flex text-center justify-center font-lato">
             <Typography
-              sx={{ fontSize: "64px", fontFamily: "'Lato', sans-serif" }}
+              sx={{
+                fontSize: { xs: "40px", md: "64px" },
+                fontFamily: "'Lato', sans-serif",
+                fontWeight: 600,
+              }}
             >
-              Fast. Stress-Free. <span className="text-orange-600">Secure</span>
+              Fast. Stress-Free.{" "}
+              <span className="text-orange-600">Secure.</span>
             </Typography>
           </div>
 
-          <div className="flex justify-center text-center font-nunito">
+          <div className="flex hidden md:block justify-center text-center px-[10px] font-nunito">
             <Typography
-              sx={{ fontSize: "18px", fontFamily: "'Nunito Sans', sans-serif" }}
+              sx={{
+                fontSize: { xs: "16px", md: "18px" },
+                fontFamily: "'Nunito Sans', sans-serif",
+                fontWeight: 400,
+              }}
             >
               Say goodbye to complaints and cash hassles—say hello to
               contactless <br /> payments. MoneySmith turns your what-ifs into
@@ -41,7 +53,20 @@ const Home = () => {
             </Typography>
           </div>
 
-          <div className="flex justify-center gap-[23px] mt-[40px]">
+          <div className="flex md:hidden justify-center text-center px-[10px] font-nunito">
+            <Typography
+              sx={{
+                fontSize: { xs: "16px", md: "18px" },
+                fontFamily: "'Nunito Sans', sans-serif",
+                fontWeight: 400,
+              }}
+            >
+              Say goodbye to complaints and cash hassles-say hello to
+              contactless payments. MoneySmith turns your what-ifs into reality!
+            </Typography>
+          </div>
+
+          <div className="flex justify-center gap-[23px] mt-[40px] px-[10px]">
             <Button
               className="bg-gradient-to-r from-[#345DAB] to-[#212FAB]"
               sx={{
@@ -103,21 +128,23 @@ const Home = () => {
       {/*banner section*/}
       <div className="bg-[#5D7DBC] py-[75px] pl-[60px] pr-[80px] flex justify-center text-center font-lato">
         <div className="relative items-center">
-          <Typography
-            sx={{
-              color: "#D0D5DD",
-              fontSize: "64px",
-              fontFamily: "'Lato', sans-serif",
-            }}
-          >
-            Buying or Selling? MoneySmith <br /> makes it simple.
-          </Typography>
+          <div className="pl-[1rem]">
+            <Typography
+              sx={{
+                color: "#D0D5DD",
+                fontSize: "64px",
+                fontFamily: "'Lato', sans-serif",
+              }}
+            >
+              Buying or Selling? MoneySmith <br /> makes it simple.
+            </Typography>
+          </div>
 
           <div className="mt-24">
             <img
               src={nfc_logo}
               alt="NFC logo"
-              className="absolute -bottom-[4.7rem] -right-[21.75rem]"
+              className="absolute md:-bottom-[4.7rem] -bottom-[4.65rem] -right-[2rem] md:-right-[21.75rem] h-[15rem]"
             />
           </div>
         </div>

@@ -17,7 +17,7 @@ const Customer_app = () => {
             label="Customer App"
             variant="filled"
             sx={{
-              fontSize: "24PX",
+              fontSize: { xs: "18px", md: "24px" },
               color: "#F56630",
               borderColor: "#F566301A",
               backgroundColor: "#F566301A",
@@ -34,7 +34,7 @@ const Customer_app = () => {
           <Typography
             variant="h1"
             sx={{
-              fontSize: "40px",
+              fontSize: { xs: "32px", md: "40px" },
               fontFamily: "'Lato', sans-serif",
               fontWeight: 700,
             }}
@@ -45,7 +45,10 @@ const Customer_app = () => {
 
         <div className="font-nunito flex justify-center text-center text-[#D0D5DD]">
           <Typography
-            sx={{ fontSize: "18px", fontFamily: "'Nunito Sans', sans-serif" }}
+            sx={{
+              fontSize: { xs: "16px", md: "18px" },
+              fontFamily: "'Nunito Sans', sans-serif",
+            }}
             variant="body2"
           >
             Join thousands enjoying stress-free transactions with Moneysmith
@@ -53,38 +56,38 @@ const Customer_app = () => {
         </div>
       </div>
 
-      <div className="flex gap-[40px] justify-center pb-[40px]">
-        <div className="bg-[#162748] relative flex justify-center rounded-[40px] w-[648px] h-[566px] ">
-          <div className="pt-[73px]">
-            <img src={customer_app} alt="Vendor app illustration" />
+      <div className="flex flex-col md:flex-row gap-[40px] justify-center pb-[40px]">
+        <div className="bg-[#162748] mx-[.5rem] relative flex justify-center rounded-[40px] md:w-[648px] w-[358px] md:h-[566px] h-[312px] ">
+          <div className="md:pt-[73px] pt-[40px] md:w-[438px] md:h-[493px] w-[241px] h-[272px]">
+            <img src={customer_app} alt="Customer app illustration" />
           </div>
 
           <img
             src={tap_to_pay}
             alt="Tap to pay"
-            className="absolute top-[8.3rem] left-10"
+            className="absolute top-[5rem] md:top-[9.5rem] md:left-10 right-60 w-[82px] h-[30px] md:w-[167px] md:h-[50px]"
           />
           <img
             src={scan_to_pay}
-            alt="Tap to pay"
-            className="absolute top-[13rem] right-10"
+            alt="Scan to pay"
+            className="absolute top-[7rem] md:top-[13rem] left-[15rem] md:left-[28rem] w-[82px] h-[30px] md:w-[167px] md:h-[50px]"
           />
 
           <img
             src={cards}
             alt="Cards"
-            className="absolute -bottom-[8rem] left-1/2 transform -translate-x-1/2 h-[293px] w-[479px]"
+            className="absolute md:-bottom-[8rem] -bottom-[3rem] left-1/2 transform -translate-x-1/2 md:h-[293px] h-[146px] w-[250px] md:w-[479px]"
           />
         </div>
 
-        <div className="bg-[#0E192F] py-[60px] px-[40px] rounded-[40px] w-[592px] h-[498px] mt-[2rem]">
+        <div className="bg-[#0E192F] mx-[.5rem] md:py-[60px] py-[30px] px-[40px] rounded-[40px] md:w-[592px] md:h-[498px] w-[358px]">
           <div className="flex flex-col gap-[8px]">
             <img src={lightning} alt="Lightning fasr" />
             <img src={security} alt="Rock-solid security" />
             <img src={accessible} alt="Always accessible" />
           </div>
 
-          <div className="flex  gap-[24px] mt-[40px]">
+          <div className="flex gap-[12px]  md:gap-[24px] md:mt-[40px] mt-[20px]">
             <Button
               className="bg-gradient-to-r from-[#345DAB] to-[#212FAB]"
               sx={{
@@ -94,6 +97,7 @@ const Customer_app = () => {
                 textTransform: "capitalize",
                 width: "137px",
                 height: "54px",
+                fontFamily: "'Nunito Sans', sans-serif",
               }}
             >
               <Typography sx={{ color: "#FFFFFF", fontSize: "14px" }}>
@@ -109,6 +113,7 @@ const Customer_app = () => {
                 textTransform: "capitalize",
                 backgroundColor: "#FAFAFA0D",
                 width: "137px",
+                fontFamily: "'Nunito Sans', sans-serif",
               }}
             >
               <Typography sx={{ color: "#FFFFFF", fontSize: "14px" }}>

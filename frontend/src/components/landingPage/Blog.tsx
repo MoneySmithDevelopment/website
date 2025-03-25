@@ -4,7 +4,7 @@ import blog_image from "../../assets/blog_image.png";
 
 const Blog = () => {
   return (
-    <div className="py-[75px] px-[80px] flex gap-[40px]  justify-center">
+    <div className="py-[75px] md:px-[80px] px-[20px] flex md:gap-[40px] gap-[20px] md:flex-row flex-col  justify-center">
       <div className="flex gap-[25px] flex-col">
         <img src={blog_image} alt="blog banner" />
 
@@ -13,7 +13,7 @@ const Blog = () => {
             <Typography
               sx={{
                 color: "#345DAB",
-                fontSize: "20px",
+                fontSize: { xs: "16px", md: "20px" },
                 fontFamily: "'Nunito Sans', sans-serif",
               }}
             >
@@ -22,7 +22,11 @@ const Blog = () => {
           </div>
           <Typography
             variant="h6"
-            sx={{ fontSize: "20px", color: "white", paddingTop: "7px" }}
+            sx={{
+              fontSize: { xs: "16px", md: "20px" },
+              color: "white",
+              paddingTop: "7px",
+            }}
           >
             13 March, 2025
           </Typography>
@@ -31,8 +35,8 @@ const Blog = () => {
         <div>
           <Typography
             sx={{
-              color: "white",
-              fontSize: "36px",
+              color: "#D0D5DD",
+              fontSize: { xs: "24px", md: "36px" },
               lineHeight: "100%",
               fontFamily: "'Lato', sans-serif",
             }}
@@ -64,7 +68,7 @@ const Blog = () => {
             <Typography
               sx={{
                 color: "#345DAB",
-                fontSize: "20px",
+                fontSize: { xs: "16px", md: "20px" },
                 fontFamily: "'Nunito Sans', sans-serif",
               }}
             >
@@ -73,7 +77,11 @@ const Blog = () => {
           </div>
           <Typography
             variant="h6"
-            sx={{ fontSize: "20px", color: "white", paddingTop: "7px" }}
+            sx={{
+              fontSize: { xs: "16px", md: "20px" },
+              color: "white",
+              paddingTop: "7px",
+            }}
           >
             13 March, 2025
           </Typography>
@@ -82,8 +90,8 @@ const Blog = () => {
         <div>
           <Typography
             sx={{
-              color: "white",
-              fontSize: "36px",
+              color: "#D0D5DD",
+              fontSize: { xs: "24px", md: "36px" },
               lineHeight: "100%",
               fontFamily: "'Lato', sans-serif",
             }}
