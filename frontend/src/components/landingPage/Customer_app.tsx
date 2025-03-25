@@ -7,6 +7,7 @@ import accessible from "../../assets/customer_app/accessible.png";
 import cards from "../../assets/customer_app/cards.png";
 import scan_to_pay from "../../assets/customer_app/scan_to_pay.png";
 import tap_to_pay from "../../assets/customer_app/tap_to_pay.png";
+import { motion } from "framer-motion";
 
 const Customer_app = () => {
   return (
@@ -62,15 +63,24 @@ const Customer_app = () => {
             <img src={customer_app} alt="Customer app illustration" />
           </div>
 
-          <img
+          <motion.img
             src={tap_to_pay}
             alt="Tap to pay"
             className="absolute top-[5rem] md:top-[9.5rem] md:left-10 right-60 w-[82px] h-[30px] md:w-[167px] md:h-[50px]"
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true }}
           />
-          <img
+
+          <motion.img
             src={scan_to_pay}
             alt="Scan to pay"
             className="absolute top-[7rem] md:top-[13rem] left-[15rem] md:left-[28rem] w-[82px] h-[30px] md:w-[167px] md:h-[50px]"
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+            viewport={{ once: true }}
           />
 
           <img

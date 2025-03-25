@@ -2,6 +2,7 @@ import { Button, Typography } from "@mui/material";
 import React from "react";
 import Navbar_Footer from "../container/Navbar_Footer";
 import contact from "../assets/contact.png";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -99,9 +100,22 @@ const About = () => {
 
         {/**Banner section */}
 
-        <div className="bg-[#1627481A]  ">
+        <motion.div
+          className="bg-[#1627481A]"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
           <div className="flex flex-col md:py-[40px] py-[25px] md:mx-[80px] mx-[20px] text-center gap-[10px] text-[#D0D5DD]">
-            <div className="flex justify-center">
+            {/* Text Animation */}
+            <motion.div
+              className="flex justify-center"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+              viewport={{ once: true }}
+            >
               <Typography
                 fontWeight={600}
                 sx={{
@@ -113,9 +127,16 @@ const About = () => {
                 enjoy effortless <br className="hidden md:block" />{" "}
                 transactions!
               </Typography>
-            </div>
+            </motion.div>
 
-            <div className="flex  justify-center gap-[23px] mt-[40px]">
+            {/* Buttons Animation */}
+            <motion.div
+              className="flex justify-center gap-[23px] mt-[40px]"
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+              viewport={{ once: true }}
+            >
               <Button
                 className="bg-gradient-to-r from-[#345DAB] to-[#212FAB]"
                 sx={{
@@ -157,16 +178,27 @@ const About = () => {
                   View Demo
                 </Typography>
               </Button>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
 
         {/**Contact section */}
-        <div
-          className="flex md:flex-row flex-col justify-between md:py-[40px] py-[25px] md:px-[80px] px-[20px] "
+        <motion.div
+          className="flex md:flex-row flex-col justify-between md:py-[40px] py-[25px] md:px-[80px] px-[20px]"
           id="contact_us"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
         >
-          <div className="flex flex-col md:gap-[10px] gap-[20px]">
+          {/* Left Text Section */}
+          <motion.div
+            className="flex flex-col md:gap-[10px] gap-[20px]"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
             <Typography
               sx={{
                 fontSize: "32px",
@@ -194,12 +226,19 @@ const About = () => {
               assist. Just reach out and <br className="hidden md:block" />{" "}
               we’ll be right back at you!
             </Typography>
-          </div>
+          </motion.div>
 
-          <div className="md:mt-[0rem] mt-[2rem]">
+          {/* Image Section */}
+          <motion.div
+            className="md:mt-[0rem] mt-[2rem]"
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
             <img src={contact} alt="Contact info" />
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </Navbar_Footer>
   );

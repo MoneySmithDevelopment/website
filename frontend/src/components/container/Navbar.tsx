@@ -5,6 +5,7 @@ import logo from "../../logos/moneysmith_name_logo.png";
 import { useNavigate } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -78,38 +79,60 @@ const Navbar = () => {
         </div>
 
         <div className="md:hidden py-[25px]" onClick={handleToggle}>
-          {open ? (
-            <AiOutlineClose size="20px" />
-          ) : (
-            <AiOutlineMenu size="20px" />
-          )}
+          <motion.div
+            key={open ? "close" : "menu"}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.8 }}
+            transition={{ duration: 0.3 }}
+          >
+            {open ? (
+              <AiOutlineClose size="20px" />
+            ) : (
+              <AiOutlineMenu size="20px" />
+            )}
+          </motion.div>
         </div>
       </div>
 
       {open && (
-        <div className="flex py-[20px] text-center bg-[#121B2B] text-[#EBEFF7] flex-col">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
+          className="flex py-[20px] text-center bg-[#121B2B] text-[#EBEFF7] flex-col"
+        >
           <div className="flex justify-center">
             <ul
-              className="flex flex-col justify-end  text-[18px]"
+              className="flex flex-col justify-end text-[18px]"
               style={{
                 fontFamily: '"Nunito sans", "Roboto", "Arial", sans-serif',
               }}
             >
               <li
-                onClick={() => navigate("/#customer_app")}
+                onClick={() => {
+                  navigate("/#customer_app");
+                  setOpen(false);
+                }}
                 className="cursor-pointer font-nunito py-[10px]"
               >
                 Customer Mobile
               </li>
               <li
-                onClick={() => navigate("/#vendor_app")}
+                onClick={() => {
+                  navigate("/#vendor_app");
+                  setOpen(false);
+                }}
                 className="cursor-pointer font-nunito py-[10px]"
               >
                 Vendor Mobile
               </li>
-              {/* <li onClick={() => navigate("/blog")}>Blog</li> */}
               <li
-                onClick={() => navigate("/about")}
+                onClick={() => {
+                  navigate("/about");
+                  setOpen(false);
+                }}
                 className="cursor-pointer font-nunito py-[10px]"
               >
                 About Us
@@ -119,7 +142,10 @@ const Navbar = () => {
 
           <div className="py-[12px] flex justify-center">
             <Button
-              onClick={() => navigate("/about#contact_us")}
+              onClick={() => {
+                navigate("/about#contact_us");
+                setOpen(false);
+              }}
               className="bg-gradient-to-r from-[#345DAB] to-[#212FAB]"
               sx={{
                 paddingX: "24px",
@@ -139,7 +165,7 @@ const Navbar = () => {
               </Typography>
             </Button>
           </div>
-        </div>
+        </motion.div>
       )}
     </>
   );

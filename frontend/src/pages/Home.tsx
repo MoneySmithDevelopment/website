@@ -7,14 +7,27 @@ import nfc_logo from "../logos/nfc_logo.png";
 import Vendor_app from "../components/landingPage/Vendor_app";
 import Blog from "../components/landingPage/Blog";
 import FAQs from "../components/landingPage/FAQs";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
     <Navbar_Footer>
-      {/*Hero seciton*/}
-      <div className="text-white flex flex-col md:pt-[100px] pt-[50px]">
-        <div className="flex flex-col md:gap-[8px]">
-          <div className="flex text-center justify-center font-lato">
+      {/* Hero Section */}
+      <motion.div
+        className="text-white flex flex-col md:pt-[100px] pt-[50px]"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
+        <motion.div className="flex flex-col md:gap-[8px]">
+          {/* Title */}
+          <motion.div
+            className="flex text-center justify-center font-lato"
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
             <Typography
               variant="h4"
               sx={{
@@ -24,9 +37,15 @@ const Home = () => {
             >
               MONEYSMITH
             </Typography>
-          </div>
+          </motion.div>
 
-          <div className="flex text-center justify-center font-lato">
+          {/* Heading */}
+          <motion.div
+            className="flex text-center justify-center font-lato"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.2 }}
+          >
             <Typography
               sx={{
                 fontSize: { xs: "40px", md: "64px" },
@@ -37,36 +56,15 @@ const Home = () => {
               Fast. Stress-Free.{" "}
               <span className="text-orange-600">Secure.</span>
             </Typography>
-          </div>
+          </motion.div>
 
-          <div className="flex hidden md:block justify-center text-center px-[10px] font-nunito">
-            <Typography
-              sx={{
-                fontSize: { xs: "16px", md: "18px" },
-                fontFamily: "'Nunito Sans', sans-serif",
-                fontWeight: 400,
-              }}
-            >
-              Say goodbye to complaints and cash hassles—say hello to
-              contactless <br className="hidden md:block" /> payments.
-              MoneySmith turns your what-ifs into reality!
-            </Typography>
-          </div>
-
-          <div className="flex md:hidden justify-center text-center px-[10px] font-nunito">
-            <Typography
-              sx={{
-                fontSize: { xs: "16px", md: "18px" },
-                fontFamily: "'Nunito Sans', sans-serif",
-                fontWeight: 400,
-              }}
-            >
-              Say goodbye to complaints and cash hassles-say hello to
-              contactless payments. MoneySmith turns your what-ifs into reality!
-            </Typography>
-          </div>
-
-          <div className="flex justify-center gap-[23px] mt-[40px] px-[10px]">
+          {/* Buttons */}
+          <motion.div
+            className="flex justify-center gap-[23px] mt-[40px] px-[10px]"
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 0.3 }}
+          >
             <Button
               className="bg-gradient-to-r from-[#345DAB] to-[#212FAB]"
               sx={{
@@ -108,25 +106,39 @@ const Home = () => {
                 View Demo
               </Typography>
             </Button>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
-        <div className="flex justify-center mt-[25px]">
-          <img
-            src={hero_illustration}
-            alt="Tap to pay. NFC Enabled"
-            //className="h-[1280px] w-[585px]"
-          />
-        </div>
-      </div>
+        {/* Image Animation */}
+        <motion.div
+          className="flex justify-center mt-[25px]"
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, delay: 0.4 }}
+        >
+          <img src={hero_illustration} alt="Tap to pay. NFC Enabled" />
+        </motion.div>
+      </motion.div>
 
-      {/*Customer App seciton*/}
-      <div id="customer_app">
+      {/* Customer App Section */}
+      <motion.div
+        id="customer_app"
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
         <Customer_app />
-      </div>
+      </motion.div>
 
-      {/*banner section*/}
-      <div className="bg-[#5D7DBC] py-[75px] pl-[60px] pr-[80px] flex justify-center text-center font-lato">
+      {/* Banner Section */}
+      <motion.div
+        className="bg-[#5D7DBC] py-[75px] pl-[60px] pr-[80px] flex justify-center text-center font-lato"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
         <div className="relative items-center">
           <div className="pl-[1rem]">
             <Typography
@@ -141,30 +153,53 @@ const Home = () => {
             </Typography>
           </div>
 
-          <div className="mt-24">
+          {/* NFC Logo */}
+          <motion.div
+            className="mt-24"
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 0.2 }}
+          >
             <img
               src={nfc_logo}
               alt="NFC logo"
               className="absolute md:-bottom-[4.7rem] -bottom-[4.65rem] -right-[2rem] md:-right-[21.75rem] h-[15rem]"
             />
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
 
-      {/*Vendor App section*/}
-      <div id="vendor_app">
+      {/* Vendor App Section */}
+      <motion.div
+        id="vendor_app"
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
         <Vendor_app />
-      </div>
+      </motion.div>
 
-      {/**Blog section */}
-      <div>
+      {/* Blog Section */}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
         <Blog />
-      </div>
+      </motion.div>
 
-      {/**FAQs section */}
-      <div id="faq">
+      {/* FAQs Section */}
+      <motion.div
+        id="faq"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
         <FAQs />
-      </div>
+      </motion.div>
     </Navbar_Footer>
   );
 };
