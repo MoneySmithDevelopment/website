@@ -41,7 +41,7 @@ const FAQs = () => {
         <div className="font-nunito flex justify-center text-center text-[#D0D5DD]">
           <Typography
             sx={{
-              fontSize: "18px",
+              fontSize: { xs: "16px", md: "18px" },
               color: "#D0D5DD",
               fontFamily: "'Nunito Sans', sans-serif",
             }}

@@ -56,7 +56,7 @@ const Vendor_app = () => {
       </div>
 
       <div className="flex flex-col md:flex-row gap-[40px] justify-center pb-[40px]">
-        <div className="bg-[#0E192F] mx-[.5rem] md:py-[60px] py-[30px] px-[40px] rounded-[40px] md:w-[592px] md:h-[498px] w-[358px] mt-[2rem]">
+        <div className="bg-[#0E192F] ml-[1rem] md:py-[60px] py-[30px] px-[40px] rounded-[40px] md:w-[592px] md:h-[498px] w-[350px] mt-[2rem]">
           <div className="flex flex-col gap-[8px]">
             <img src={speed} alt="Speed" />
             <img src={simple} alt="Simple" />
@@ -97,7 +97,7 @@ const Vendor_app = () => {
           </div>
         </div>
 
-        <div className="bg-[#162748] mx-[.5rem] relative flex justify-center rounded-[40px] md:w-[648px] w-[358px] md:h-[566px] h-[312px] ">
+        <div className="bg-[#162748] ml-[1rem] relative flex justify-center rounded-[40px] md:w-[648px] w-[350px] md:h-[566px] h-[312px] ">
           <div className="md:pt-[70.3px] pt-[33px] md:w-[438px] md:h-[493px] w-[241px] h-[272px]">
             <img src={vendor_app} alt="Vendor app illustration" />
           </div>

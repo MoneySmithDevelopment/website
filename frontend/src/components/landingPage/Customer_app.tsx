@@ -58,7 +58,7 @@ const Customer_app = () => {
       </div>
 
       <div className="flex flex-col md:flex-row gap-[40px] justify-center pb-[40px]">
-        <div className="bg-[#162748] mx-[.5rem] relative flex justify-center rounded-[40px] md:w-[648px] w-[358px] md:h-[566px] h-[312px] ">
+        <div className="bg-[#162748] ml-[1rem] relative flex justify-center rounded-[40px] md:w-[648px] w-[350px] md:h-[566px] h-[312px] ">
           <div className="md:pt-[73px] pt-[40px] md:w-[438px] md:h-[493px] w-[241px] h-[272px]">
             <img src={customer_app} alt="Customer app illustration" />
           </div>
@@ -90,7 +90,7 @@ const Customer_app = () => {
           />
         </div>
 
-        <div className="bg-[#0E192F] mx-[.5rem] md:py-[60px] py-[30px] px-[40px] rounded-[40px] md:w-[592px] md:h-[498px] w-[358px]">
+        <div className="bg-[#0E192F] ml-[1rem] md:py-[60px] py-[30px] px-[40px] rounded-[40px] md:w-[592px] md:h-[498px] w-[350px]">
           <div className="flex flex-col gap-[8px]">
             <img src={lightning} alt="Lightning fasr" />
             <img src={security} alt="Rock-solid security" />

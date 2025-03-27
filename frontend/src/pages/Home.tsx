@@ -60,7 +60,7 @@ const Home = () => {
 
           {/* Buttons */}
           <motion.div
-            className="flex justify-center gap-[23px] mt-[40px] px-[10px]"
+            className="flex justify-center gap-[20px] mt-[40px] px-[15px]"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
