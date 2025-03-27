@@ -163,7 +163,7 @@ const Home = () => {
             <img
               src={nfc_logo}
               alt="NFC logo"
-              className="absolute md:-bottom-[4.7rem] -bottom-[4.65rem] -right-[2rem] md:-right-[21.75rem] h-[15rem]"
+              className="absolute md:-bottom-[4.7rem] -bottom-[4.65rem] -right-[.4rem] md:-right-[23rem] h-[15rem]"
             />
           </motion.div>
         </div>
@@ -172,7 +172,7 @@ const Home = () => {
       {/* Vendor App Section */}
       <motion.div
         id="vendor_app"
-        initial={{ opacity: 0, x: 100 }}
+        initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
