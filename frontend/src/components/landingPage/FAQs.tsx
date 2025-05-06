@@ -34,7 +34,7 @@ const FAQs = () => {
               fontWeight: 700,
             }}
           >
-            Do you have questions?
+            Feeling independent?👀
           </Typography>
         </div>
 
@@ -47,7 +47,8 @@ const FAQs = () => {
             }}
             variant="body2"
           >
-            Here are frequently asked questions people ask about our app
+            If you'd like to find answers on your own, feel free to explore our
+            FAQ section for quick solutions!
           </Typography>
         </div>
       </div>

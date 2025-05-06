@@ -144,7 +144,13 @@ const Home = () => {
             <Typography
               sx={{
                 color: "#D0D5DD",
-                fontSize: "64px",
+                fontSize: {
+                  xs: "32px",
+                  sm: "40px",
+                  md: "48px",
+                  lg: "56px",
+                  xl: "64px",
+                },
                 fontFamily: "'Lato', sans-serif",
               }}
             >
@@ -163,7 +169,7 @@ const Home = () => {
             <img
               src={nfc_logo}
               alt="NFC logo"
-              className="absolute md:-bottom-[4.7rem] -bottom-[4.65rem] -right-[.4rem] md:-right-[23rem] h-[15rem]"
+              className="absolute md:-bottom-[4.7rem] md:-right-[39.7%] -bottom-[4.65rem] -right-[5rem]  h-[15rem]"
             />
           </motion.div>
         </div>

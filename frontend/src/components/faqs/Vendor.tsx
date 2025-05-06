@@ -44,7 +44,7 @@ const Vendor = () => {
             fontFamily: "'Lato', sans-serif",
           }}
         >
-          For Vendors
+          For Vendors (Using MoneySmith for business transactions)
         </Typography>
         {vendor_faqs.map((faq) => (
           <>
