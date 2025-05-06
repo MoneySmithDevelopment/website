@@ -37,7 +37,13 @@ const Customer = () => {
         <Typography
           variant="h4"
           sx={{
-            fontSize: "28px",
+            fontSize: {
+              xs: "18px", // extra-small screens
+              sm: "22px", // small screens
+              md: "24px", // medium screens
+              lg: "26px", // large screens
+              xl: "28px", // extra-large screens
+            },
             color: "#FAFAFA",
             paddingX: "15px",
             paddingY: "20px",
@@ -56,7 +62,7 @@ const Customer = () => {
               >
                 <Typography
                   sx={{
-                    color: "#F0F2F5",
+                    color: "#98A2B3",
                     fontSize: "18px",
                     fontWeight: 400,
                     fontFamily: "'Nunito Sans', sans-serif",

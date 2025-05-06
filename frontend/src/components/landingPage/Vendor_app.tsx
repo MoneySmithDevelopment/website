@@ -55,64 +55,68 @@ const Vendor_app = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-[40px] justify-center pb-[40px]">
-        <div className="bg-[#0E192F] ml-[1rem] md:py-[60px] py-[30px] px-[40px] rounded-[40px] md:w-[592px] md:h-[498px] w-[350px] mt-[2rem]">
-          <div className="flex flex-col gap-[8px]">
-            <img src={speed} alt="Speed" />
-            <img src={simple} alt="Simple" />
-            <img src={scalable} alt="Scalable" />
-          </div>
+      <div className="flex flex-col md:flex-row gap-[40px] md:justify-center pb-[40px]">
+        <div className="flex justify-center">
+          <div className="bg-[#0E192F] md:py-[60px] py-[30px] px-[40px] rounded-[40px] md:w-[592px] md:h-[498px] w-[350px] mt-[2rem]">
+            <div className="flex flex-col gap-[8px]">
+              <img src={speed} alt="Speed" />
+              <img src={simple} alt="Simple" />
+              <img src={scalable} alt="Scalable" />
+            </div>
 
-          <div className="flex gap-[12px]  md:gap-[24px] md:mt-[40px] mt-[20px]">
-            <Button
-              className="bg-gradient-to-r from-[#345DAB] to-[#212FAB]"
-              sx={{
-                paddingX: "24px",
-                paddingY: "16px",
-                borderRadius: "12px",
-                textTransform: "capitalize",
-                width: "137px",
-                height: "54px",
-              }}
-            >
-              <Typography sx={{ color: "#FFFFFF", fontSize: "14px" }}>
-                Get the App
-              </Typography>
-            </Button>
+            <div className="flex gap-[12px]  md:gap-[24px] md:mt-[40px] mt-[20px]">
+              <Button
+                className="bg-gradient-to-r from-[#345DAB] to-[#212FAB]"
+                sx={{
+                  paddingX: "24px",
+                  paddingY: "16px",
+                  borderRadius: "12px",
+                  textTransform: "capitalize",
+                  width: "137px",
+                  height: "54px",
+                }}
+              >
+                <Typography sx={{ color: "#FFFFFF", fontSize: "14px" }}>
+                  Get the App
+                </Typography>
+              </Button>
 
-            <Button
-              sx={{
-                paddingX: "24px",
-                paddingY: "16px",
-                borderRadius: "12px",
-                textTransform: "capitalize",
-                backgroundColor: "#FAFAFA0D",
-                width: "137px",
-              }}
-            >
-              <Typography sx={{ color: "#FFFFFF", fontSize: "14px" }}>
-                View Demo
-              </Typography>
-            </Button>
+              <Button
+                sx={{
+                  paddingX: "24px",
+                  paddingY: "16px",
+                  borderRadius: "12px",
+                  textTransform: "capitalize",
+                  backgroundColor: "#FAFAFA0D",
+                  width: "137px",
+                }}
+              >
+                <Typography sx={{ color: "#FFFFFF", fontSize: "14px" }}>
+                  View Demo
+                </Typography>
+              </Button>
+            </div>
           </div>
         </div>
 
-        <div className="bg-[#162748] ml-[1rem] relative flex justify-center rounded-[40px] md:w-[648px] w-[350px] md:h-[566px] h-[312px] ">
-          <div className="md:pt-[70.3px] pt-[33px] md:w-[438px] md:h-[493px] w-[241px] h-[272px]">
-            <img src={vendor_app} alt="Vendor app illustration" />
+        <div className="flex justify-center">
+          <div className="bg-[#162748] md:ml-[1rem] relative flex justify-center rounded-[40px] md:w-[648px] w-[350px] md:h-[566px] h-[312px] ">
+            <div className="md:pt-[70.3px] pt-[33px] md:w-[438px] md:h-[493px] w-[241px] h-[272px]">
+              <img src={vendor_app} alt="Vendor app illustration" />
+            </div>
+
+            <img
+              src={refer_friend}
+              alt="Cards"
+              className="absolute md:bottom-[7.5rem] bottom-[4rem] left-1/2 transform -translate-x-1/2 md:h-[194px] h-[110px]"
+            />
+
+            <img
+              src={hallway}
+              alt="Cards"
+              className="absolute md:-bottom-[.5rem] -bottom-[.1rem] left-1/2 transform -translate-x-1/2 md:h-[90px] h-[58px] w-[230px] md:w-[425px]"
+            />
           </div>
-
-          <img
-            src={refer_friend}
-            alt="Cards"
-            className="absolute md:bottom-[7.5rem] bottom-[4rem] left-1/2 transform -translate-x-1/2 md:h-[194px] h-[110px]"
-          />
-
-          <img
-            src={hallway}
-            alt="Cards"
-            className="absolute md:-bottom-[.5rem] -bottom-[.1rem] left-1/2 transform -translate-x-1/2 md:h-[90px] h-[58px] w-[230px] md:w-[425px]"
-          />
         </div>
       </div>
     </>
