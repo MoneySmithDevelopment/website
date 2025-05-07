@@ -45,7 +45,7 @@ const Delete = () => {
           Closing Your MoneySmith Account?
         </Typography>
         <Typography
-          className="text-center text-gray-400 pb-[1rem]"
+          className="text-center text-gray-400 py-[.5rem]"
           sx={{
             fontFamily: '"Nunito sans", "Roboto", "Arial", sans-serif',
           }}
