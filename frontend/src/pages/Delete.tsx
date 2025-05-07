@@ -27,9 +27,8 @@ const Delete = () => {
         "Once you’ve read everything carefully, tap “Confirm Deletion” to continue.",
     },
     {
-      title: "You’ll See One of These Messages:",
-      detail: `• Success: Your account has been deleted. Thank you for being a part of MoneySmith. If you ever decide to come back, we’ll be here.
-• Error: Looks like you still have funds in your account. Please withdraw them before closing your account.`,
+      title: "You’ll See This Message:",
+      detail: `• Success: Your account has been deleted. Thank you for being a part of MoneySmith. If you ever decide to come back, we’ll be here.`,
     },
   ];
 
