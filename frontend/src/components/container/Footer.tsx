@@ -75,9 +75,9 @@ const Footer = () => {
           Legal
         </Typography>
 
-        <ul className="text-[#D0D3D9] flex flex-col gap-[12px] font-nunito">
+        <ul className="text-[#D0D3D9] flex flex-col gap-[12px] font-nunito cursor-pointer">
           <li>Partner with us</li>
-          <li>Privacy Policy</li>
+          <li onClick={() => navigate("/privacy-policy")}>Privacy Policy</li>
           <li>T&Cs</li>
         </ul>
       </div>
