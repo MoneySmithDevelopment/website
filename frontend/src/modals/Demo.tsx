@@ -52,7 +52,7 @@ const Demo = () => {
             }}
           >
             <iframe
-              src="https://www.youtube.com/embed/iTJVcQ1_hT8"
+              src="https://www.youtube.com/embed/iTJVcQ1_hT8?autoplay=1&loop=1&playlist=iTJVcQ1_hT8"
               title="YouTube video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
