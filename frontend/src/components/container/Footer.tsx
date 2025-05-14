@@ -42,9 +42,8 @@ const Footer = () => {
               fontFamily: "'Nunito Sans', sans-serif",
             }}
           >
-            A budget isn’t a punishment, it’s a game plan. Use <br />{" "}
-            MoneySmith’s budgeting tools to set spending limits and get <br />{" "}
-            alerts before you go overboard.
+            Effortless payments start here. <br /> One secure wallet for
+            all your cards.
           </Typography>
         </div>
 
