@@ -180,7 +180,7 @@ const Home = () => {
 
       {/* FAQs Section */}
       <motion.div
-        id="faq"
+        id="faqs"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 2 }}

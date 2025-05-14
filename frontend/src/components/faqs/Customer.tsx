@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { IoMdAdd } from "react-icons/io";
 import { FiMinus } from "react-icons/fi";
 
-const vendor_faqs = [
+const customer_faqs = [
   {
     id: 1,
     question: "Do I need to be linked to a specific bank to use MoneySmith?",
@@ -52,7 +52,7 @@ const Customer = () => {
         >
           For Customers (Using MoneySmith for personal transactions)
         </Typography>
-        {vendor_faqs.map((faq) => (
+        {customer_faqs.map((faq) => (
           <>
             <div key={faq.id} className="flex md:flex-row flex-col">
               {/* Question Section */}
