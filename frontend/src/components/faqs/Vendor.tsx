@@ -127,6 +127,8 @@ const Vendor = () => {
           </div>
 
           <Button
+            href="mailto:support@moneysmithng.com"
+            target="_blank"
             className="bg-gradient-to-r from-[#345DAB] to-[#212FAB]"
             sx={{
               paddingX: "24px",
