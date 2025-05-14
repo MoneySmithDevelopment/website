@@ -1,12 +1,4 @@
-import {
-  Button,
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  Typography,
-  DialogActions,
-  Box,
-} from "@mui/material";
+import { Button, Dialog, DialogContent, Typography, Box } from "@mui/material";
 import React, { useState } from "react";
 
 const Demo = () => {
