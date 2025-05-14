@@ -8,6 +8,7 @@ import Vendor_app from "../components/landingPage/Vendor_app";
 import Blog from "../components/landingPage/Blog";
 import FAQs from "../components/landingPage/FAQs";
 import { motion } from "framer-motion";
+import Demo from "../modals/Demo";
 
 const Home = () => {
   return (
@@ -86,26 +87,7 @@ const Home = () => {
               </Typography>
             </Button>
 
-            <Button
-              sx={{
-                paddingX: "24px",
-                paddingY: "16px",
-                borderRadius: "12px",
-                textTransform: "capitalize",
-                backgroundColor: "#FAFAFA0D",
-                width: "180px",
-              }}
-            >
-              <Typography
-                sx={{
-                  color: "#FFFFFF",
-                  fontSize: "16px",
-                  fontFamily: "'Nunito Sans', sans-serif",
-                }}
-              >
-                View Demo
-              </Typography>
-            </Button>
+            <Demo />
           </motion.div>
         </motion.div>
 
