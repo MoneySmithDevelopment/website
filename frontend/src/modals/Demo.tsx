@@ -1,7 +1,11 @@
 import { Button, Dialog, DialogContent, Typography, Box } from "@mui/material";
 import React, { useState } from "react";
 
-const Demo = () => {
+interface Props {
+  width: string;
+}
+
+const Demo: React.FC<Props> = ({ width }) => {
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => setOpen(true);
@@ -17,7 +21,7 @@ const Demo = () => {
           borderRadius: "12px",
           textTransform: "capitalize",
           backgroundColor: "#FAFAFA0D",
-          width: "180px",
+          width: width,
         }}
       >
         <Typography

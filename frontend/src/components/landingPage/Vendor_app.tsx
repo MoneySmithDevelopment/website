@@ -6,6 +6,7 @@ import simple from "../../assets/vendor_app/simple.png";
 import scalable from "../../assets/vendor_app/scalable.png";
 import refer_friend from "../../assets/vendor_app/refer_friend.png";
 import hallway from "../../assets/vendor_app/hallway.png";
+import Demo from "../../modals/Demo";
 
 const Vendor_app = () => {
   return (
@@ -81,20 +82,7 @@ const Vendor_app = () => {
                 </Typography>
               </Button>
 
-              <Button
-                sx={{
-                  paddingX: "24px",
-                  paddingY: "16px",
-                  borderRadius: "12px",
-                  textTransform: "capitalize",
-                  backgroundColor: "#FAFAFA0D",
-                  width: "137px",
-                }}
-              >
-                <Typography sx={{ color: "#FFFFFF", fontSize: "14px" }}>
-                  View Demo
-                </Typography>
-              </Button>
+              <Demo width="137px" />
             </div>
           </div>
         </div>

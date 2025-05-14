@@ -8,6 +8,7 @@ import cards from "../../assets/customer_app/cards.png";
 import scan_to_pay from "../../assets/customer_app/scan_to_pay.png";
 import tap_to_pay from "../../assets/customer_app/tap_to_pay.png";
 import { motion } from "framer-motion";
+import Demo from "../../modals/Demo";
 
 const Customer_app = () => {
   return (
@@ -118,21 +119,7 @@ const Customer_app = () => {
                 </Typography>
               </Button>
 
-              <Button
-                sx={{
-                  paddingX: "24px",
-                  paddingY: "16px",
-                  borderRadius: "12px",
-                  textTransform: "capitalize",
-                  backgroundColor: "#FAFAFA0D",
-                  width: "137px",
-                  fontFamily: "'Nunito Sans', sans-serif",
-                }}
-              >
-                <Typography sx={{ color: "#FFFFFF", fontSize: "14px" }}>
-                  View Demo
-                </Typography>
-              </Button>
+              <Demo width="137px" />
             </div>
           </div>
         </div>

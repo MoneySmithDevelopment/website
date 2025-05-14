@@ -87,7 +87,7 @@ const Home = () => {
               </Typography>
             </Button>
 
-            <Demo />
+            <Demo width="180px" />
           </motion.div>
         </motion.div>
 
